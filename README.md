@@ -6,7 +6,7 @@ The source code includes both the playback code, written in Z80 assembly, and en
 ## Building
 You will need Python 3, SPASM and Rabbitsign to build this demo. If you do not have SPASM or Rabbitsign installed, you can place their binaries in the `./util` directory.
 
-[SPASM](https://wabbit.codeplex.com/releases/view/45088)
+[SPASM](https://github.com/alberthdev/spasm-ng)
 
 [RabbitSign (Win)](http://www.ticalc.org/archives/files/fileinfo/420/42035.html)
 
