@@ -1,5 +1,5 @@
-# Bad Apple for TI-84
-This is the source code for the Bad Apple demo for TI-84, which plays back the entire 3:40 Bad Apple video on a TI-83+/84+ SE calculator. Video: https://www.youtube.com/watch?v=6pAeWf3NPNU
+# Bad Apple!! for the regular TI-84 Plus
+This is a fork of the [original Bad Apple demo for the TI-84 Plus Silver Edition](https://github.com/fb39ca4/badapple-ti84), which plays back the entire 3:40 Bad Apple video. Because the regular TI-84 Plus doesn't have enough storage and memory, I used it in [my version](https://youtu.be/XITppCcJXn0) for the sound only.
 
 The source code includes both the playback code, written in Z80 assembly, and encoders for the video and audio, written in Python.
 
@@ -15,6 +15,8 @@ You will need Python 3, SPASM and Rabbitsign to build this demo. If you do not h
 To build, just run `./build.py`. If everything goes successfully, it will produce the final application file `./badapple.8xk` which you can then transfer to your calculator or run on an emulator.
 
 ## Transfer Issues
+You shouldn't experience any issues as this version is much smaller, but here is the original readme in case you still run into problems:
+
 Calculator file transfer software is unreliable for application files this large. I have only been able to successfully transfer the app using TILP. If you are having problems with TILP crashing, that is probably because you have a version that does not allocate enough memory for applications larger than 50 pages. If this is happening to you, or the transfer is otherwise failing, you can try running `./build_allsizes.py` to generate multiple application files of differing sizes, and try each one until it works.
 
 ## Editing
