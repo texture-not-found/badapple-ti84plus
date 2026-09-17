@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 import sys
 if (len(sys.argv) < 3):
-    print("Usage: encode.py INPUTFILE OUTPUTFILE [FRAMESIZES]")
+    print("Usage: python3 encode.py INPUTFILE OUTPUTFILE [FRAMESIZES]")
     exit(-1)
 from array import *
 import gzip

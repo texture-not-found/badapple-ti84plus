@@ -12,12 +12,12 @@ You will need Python 3, SPASM and Rabbitsign to build this demo. If you do not h
 
 [RabbitSign (*nix)](http://www.ticalc.org/archives/files/fileinfo/383/38392.html)
 
-To build, just run `./build.py`. If everything goes successfully, it will produce the final application file `./badapple.8xk` which you can then transfer to your calculator or run on an emulator.
+To build, just run `python3 ./build.py`. If everything goes successfully, it will produce the final application file `./badapple.8xk` which you can then transfer to your calculator or run on an emulator.
 
 ## Transfer Issues
 You shouldn't experience any issues as this version is much smaller, but here is the original readme in case you still run into problems:
 
-Calculator file transfer software is unreliable for application files this large. I have only been able to successfully transfer the app using TILP. If you are having problems with TILP crashing, that is probably because you have a version that does not allocate enough memory for applications larger than 50 pages. If this is happening to you, or the transfer is otherwise failing, you can try running `./build_allsizes.py` to generate multiple application files of differing sizes, and try each one until it works.
+Calculator file transfer software is unreliable for application files this large. I have only been able to successfully transfer the app using TILP. If you are having problems with TILP crashing, that is probably because you have a version that does not allocate enough memory for applications larger than 50 pages. If this is happening to you, or the transfer is otherwise failing, you can try running `python3 ./build_allsizes.py` to generate multiple application files of differing sizes, and try each one until it works.
 
 ## Editing
 

@@ -6,12 +6,12 @@ os.environ["PATH"] += os.pathsep + "./util"
 if (os.path.isfile("./bin/videopages.bin") == False):
     os.makedirs("./bin", exist_ok=True)
     print("Encoding video:")
-    os.system("encode.py ./video/frames.bin.gz ./bin/videopages.bin")
+    os.system("python3 encode.py ./video/frames.bin.gz ./bin/videopages.bin")
 else:
     print("Video already encoded, skipping encode. Delete ./bin/videopages.bin to force reencode")
 
 print("Encoding audio")
-os.system("audio.py ./music/badapple.mmp ./music/track1.asm ./music/track2.asm ./music/track3.asm ./music/track4.asm")
+os.system("python3 audio.py ./music/badapple.mmp ./music/track1.asm ./music/track2.asm ./music/track3.asm ./music/track4.asm")
 
 print("Assembling:")
 os.system("spasm badapple.asm ./bin/codepages.bin")

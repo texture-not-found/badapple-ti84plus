@@ -5,7 +5,7 @@ from array import *
 os.environ["PATH"] += os.pathsep + "./util"
 
 if (os.path.isfile("./bin/badapple.bin") == False):
-    os.system("." + os.sep + "build.py")
+    os.system("python3 ." + os.sep + "build.py")
 
 badapple_bin = open("./bin/badapple.bin", "rb")
 data = array('B', badapple_bin.read())
