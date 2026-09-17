@@ -1,11 +1,13 @@
 #!/usr/bin/env python3
 import os
 from array import *
+import subprocess
+import sys
 
 os.environ["PATH"] += os.pathsep + "./util"
 
 if (os.path.isfile("./bin/badapple.bin") == False):
-    os.system("python3 ." + os.sep + "build.py")
+    subprocess.run([sys.executable, "." + os.sep + "build.py"])
 
 badapple_bin = open("./bin/badapple.bin", "rb")
 data = array('B', badapple_bin.read())
@@ -22,7 +24,7 @@ emptyPage = array('B', [0] * 16384)
 
 while (numPages < 96):
     print("Packaging with " + str(numPages + 1) + " pages.")
-    os.system("rabbitsign -f -p -o ./allsizes/badapple" + str(numPages + 1) + ".8xk ./allsizes/resized.bin")
+    subprocess.run(["rabbitsign", "-f", "-p", "-o", "./allsizes/badapple" + str(numPages + 1) + ".8xk", "./allsizes/resized.bin"])
     resized_bin = open("./allsizes/resized.bin", "ab")
     emptyPage.tofile(resized_bin)
     resized_bin.close()

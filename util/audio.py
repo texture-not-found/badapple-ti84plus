@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 import sys
 if (len(sys.argv) < 6):
-    print("Usage: python3 audio.py INPUTFILE OUTPUT1 OUTPUT2 OUTPUT3 OUTPUT4")
+    print("Usage: audio.py INPUTFILE OUTPUT1 OUTPUT2 OUTPUT3 OUTPUT4")
     exit(-1)
 import xml.etree.ElementTree
 import math
